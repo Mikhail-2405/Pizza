@@ -1,0 +1,148 @@
+.title__container {
+    width: 90%;
+    margin: 45px 0px 40px 0px;
+}
+
+@media (max-width: 1041px) {
+    .title__container {
+        width: 90%;
+        display: flex;
+        justify-content: center;
+    }
+} 
+
+.container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: repeat(2, 1fr);
+    grid-column-gap: 30px;
+    grid-row-gap: 40px;
+}
+
+@media screen and (max-width: 1390px) {
+    .container {
+        grid-template-columns: repeat(3, 1fr);
+    }
+}
+
+@media screen and (max-width: 1040px) {
+    .container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media screen and (max-width: 680px) {
+    .container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
+
+.form__pizza {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    & a {
+        text-decoration: none;
+        color:#000;
+    }
+    & img {
+        max-width: 260px;
+    }
+}
+
+.form__pizza-name {
+    font-style: normal;
+    font-weight: 800;
+    font-size: 20px;
+    line-height: 24px;
+    text-align: center;
+    letter-spacing: 0.01em;
+}
+
+.form__pizza-item {
+    width: 280px;
+    height: 85px;
+    background: #F3F3F3;
+    border-radius: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+    & .active {
+        padding: 7px 15px;
+        background: #FFFFFF;
+        border-radius: 5px;
+    }
+}
+
+.form__pizza-dough {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    & li {
+        list-style-type: none;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.4; 
+        cursor: pointer;
+        
+    }
+}
+
+.form__pizza-size {
+    width: 100%;
+    padding: 0;
+    margin: 0;
+    align-items: center;
+    display: grid;
+    justify-items: center;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: repeat(1, 1fr);
+    & li {
+        list-style-type: none;
+        font-weight: 700;
+        font-size: 14px;
+        text-align: center;
+        line-height: 1.4; 
+        cursor: pointer;
+    }
+}
+
+.form__pizza-price {
+    margin-top: 17px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & > span {
+        font-weight: 700;
+        font-size: 22px;
+        line-height: 27px;
+    }
+    & i {
+        width: 22px;
+        height: 22px;
+        font-weight: 700;
+        font-size: 13px;
+        line-height: 23px;
+        background: #EB5A1E;
+        color: white;
+        border-radius: 100px;
+        text-align: center;
+    }
+}
+
+.form__pizza-button:hover {
+    background: #EB5A1E;
+    color: #F9F9F9;
+    & svg path {
+        fill: #f0e9e9;
+    }
+}
+
+

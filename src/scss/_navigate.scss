@@ -1,0 +1,15 @@
+nav {
+    display: flex;
+    width: 90%;
+    justify-content: space-between;
+    align-items: baseline;
+    // position: absolute;
+    /* z-index: 2; */
+    top: 160px;
+}
+
+@media (max-width: 1390px) {
+    nav{
+        align-items: center;
+    }
+}

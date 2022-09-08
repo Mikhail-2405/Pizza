@@ -1,0 +1,13 @@
+.info-pizza {
+    display: flex;
+    align-items: center;
+    max-width: 80%;
+    border: #EB5A1E solid 10px;
+    border-radius: 15px;
+    padding: 20px;
+    margin-bottom: 40px;
+    img {
+        width: 300px;
+        height: 300px;
+    }
+}

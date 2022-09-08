@@ -1,0 +1,121 @@
+.basket__active{
+    width: 60%;
+    min-width: 828px;
+    margin-bottom: 100px;
+}
+
+.basket__title {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    & h2 {
+        font-weight: 700;
+        font-size: 32px;
+        line-height: 39px;
+    }
+}
+
+.bassket-pizza__form {
+    border-top: 2px solid #F4F4F4;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.bassket-pizza__form-sum{
+    text-align: center;
+    width: 58px;
+}
+
+.bassket-pizza__form-item {
+    display: flex;
+    align-items: center;
+    & img {
+        width: 80px;
+        height: 80px;
+        margin: 0px 15px 0px 15px;
+    }
+    & div {
+        width: 245px;
+        & h3 {
+        margin: 0px;
+        }
+    }
+}
+
+.bassket-pizza__form-add{
+    & span {
+        margin: 0px 12px 0px 12px;
+    }
+}
+
+.bassket-pizza__form-btn {
+    width: 32px;
+    height: 32px;
+    background: #FFFFFF;
+    border: 2px solid #FE5F1E;
+    border-radius: 16px;
+    color:#FE5F1E;
+    cursor: pointer;
+}
+
+.bassket-pizza__info {
+    display: flex;
+    justify-content: space-between;
+    margin: 40px 0px 40px 0px;
+    font-weight: 400;
+    font-size: 22px;
+    line-height: 27px;
+}
+
+.basket__btn {
+    display: flex;
+    justify-content:space-between;
+    & button {
+        width: 211px;
+        height: 55px;
+        font-size: 16px;
+        line-height: 19px;
+    }
+    & .btn-end {
+        font-weight: 400;
+        color: #CACACA;
+    }
+    & a{
+        text-decoration: none;
+    }
+}
+
+.btn-pay {
+    font-weight: 700;
+    color: #FFFFFF; 
+    background: #FE5F1E;
+}
+
+@media (max-width: 1000px) {
+    .basket__active{
+        width: 90%;
+        min-width: 600px;
+        // width: 65%;
+    }
+}
+
+@media (max-width: 750px) {
+    .basket__active{
+        min-width: 300px;
+    }
+}
+
+@media (max-width: 750px) {
+    .bassket-pizza__form-item{
+    align-items: flex-start;
+    flex-direction: column;
+    }
+}
+@media (max-width: 590px) {
+    .bassket-pizza__form-add{
+        display: flex;
+        flex-direction: column-reverse;
+        align-items: center;
+    }
+}
